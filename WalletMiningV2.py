@@ -64,7 +64,7 @@ os.system('title Mining...')
 while True:
     chance = random.uniform(0, 500)
     # if the chance is less than 259
-    if chance < 499:
+    if chance < 499999:
         chance = 0.0
         os.system('title INVALID BTC')
         # make the letters randomised and change everytime they are generated
@@ -74,7 +74,7 @@ while True:
         # pause for 1 second
         sleep(0.025)
     # if the chance is below 1
-    elif chance > 499:
+    elif chance > 499999:
         chance = random.uniform(0.0001, 5.99)
         # make the letters randomised and change everytime they are generated
         letters = ''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') for i in range(random.randint(70, 71)))
@@ -89,4 +89,5 @@ while True:
         nextLine()
         input('Press ENTER to continue...')
         print(yeller + '\n')
+        
         
